@@ -1,0 +1,63 @@
+.board-game-badge {
+    position: relative;
+    border-radius: 8px;
+    background-color: pink;
+    overflow: hidden;
+    padding-top: 100%;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+
+.board-game-badge-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    transition: all 0.2s ease-in-out;
+}
+.board-game-badge:hover .board-game-badge-background {
+    transform: scale(1.15);
+}
+
+.board-game-badge-content {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem 1.5rem;
+    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .9));
+    color: white;
+    z-index: 3;
+}
+
+.board-game-badge .board-game-name {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.board-game-badge .board-game-badge-details {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.board-game-badge .board-game-badge-details span {
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+}
+
+.board-game-badge .board-game-badge-details span i {
+    display: block;
+    margin-right: 0.4rem;
+    font-size: 0.7rem;
+}

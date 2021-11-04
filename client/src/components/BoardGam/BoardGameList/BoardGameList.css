@@ -1,0 +1,23 @@
+.board-game-list-container {
+    padding: 4rem 0;
+}
+
+.board-game-list-title {
+    padding: 0;
+    margin: 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.board-game-list {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: max-content;
+    grid-auto-rows: minmax(min-content, max-content);
+    column-gap: 2em;
+    row-gap: 2rem;
+}
+
+.board-game-list-item {
+}
