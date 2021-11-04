@@ -1,0 +1,16 @@
+.navigation-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 4rem;
+    background-color: #EDC7B7;
+    opacity: 0.9;
+    z-index: 1000;
+}
+
+.navigation-header-content {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}

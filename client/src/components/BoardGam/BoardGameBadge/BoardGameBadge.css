@@ -1,13 +1,13 @@
 .board-game-badge {
     position: relative;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     background-color: pink;
     overflow: hidden;
     padding-top: 100%;
-    border: 1px solid black;
+    /* border: 1px solid rgb(170, 166, 166); */
     cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
 }
-
 
 .board-game-badge-background {
     position: absolute;
@@ -30,8 +30,8 @@
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 1rem 1.5rem;
-    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .9));
+    padding: 0.5rem 1.5rem 1rem 1.5rem;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .9));
     color: white;
     z-index: 3;
 }
@@ -39,7 +39,7 @@
 .board-game-badge .board-game-name {
     margin: 0;
     padding: 0;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: bold;
 }
 

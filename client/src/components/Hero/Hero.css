@@ -2,18 +2,24 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 60vh;
+    height: 80vh;
 }
 
-.hero-content {
+.hero-gradient {
+
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.hero-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, .5);
-    color: white;
 }
 
 .hero-title {
