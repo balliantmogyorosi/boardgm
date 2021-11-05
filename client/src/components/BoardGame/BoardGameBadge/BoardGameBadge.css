@@ -63,7 +63,7 @@
     font-size: 0.7rem;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .board-game-badge-content {
         padding: 0.5rem;
     }
@@ -75,5 +75,20 @@
     }
     .board-game-badge .board-game-badge-details span i {
         font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .board-game-badge-content {
+        padding: 0.5rem 0.15rem;
+    }
+    .board-game-badge .board-game-name {
+        font-size: 0.75rem;
+    }
+    .board-game-badge .board-game-badge-details span {
+        font-size: 0.6rem;
+    }
+    .board-game-badge .board-game-badge-details span i {
+        font-size: 0.5rem;
     }
 }

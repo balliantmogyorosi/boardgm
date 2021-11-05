@@ -38,7 +38,6 @@
         font-size: 1.5rem;
     }
     .board-game-list {
-        grid-template-columns: 1fr;
         column-gap: 1rem;
         row-gap: 1rem;
     }
