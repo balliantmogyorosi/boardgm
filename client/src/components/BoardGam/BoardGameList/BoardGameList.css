@@ -13,13 +13,11 @@
     margin-top: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: max-content;
-    grid-auto-rows: minmax(min-content, max-content);
     column-gap: 2em;
     row-gap: 2rem;
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
     .board-game-list {
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 1.5rem;
@@ -27,7 +25,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .board-game-list {
         grid-template-columns: 1fr 1fr;
         column-gap: 1.25rem;
@@ -35,7 +33,7 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
     .board-game-list-title {
         font-size: 1.5rem;
     }
