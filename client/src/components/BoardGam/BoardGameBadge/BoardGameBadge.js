@@ -1,7 +1,5 @@
 import React from 'react'
 
-import { Line } from '../../UI'
-
 import './BoardGameBadge.css'
 
 
@@ -14,28 +12,26 @@ const BoardGameBadge = ({ boardGame, className, onClick, style }) => {
             />
             <div className="board-game-badge-content">
                 <h5 className="board-game-name">{boardGame.name}</h5>
-                <Line
-                    height={4}
-                    spacingVertical='0.5rem'
-                />
-                {/* <span>{boardGame.description.slice(0, 120)}...</span> */}
                 <div className="board-game-badge-details">
                     <span>
                         <i className="fas fa-users" />
+                        &nbsp;
                         {boardGame.minPlayers === boardGame.maxPlayers ?
                             boardGame.minPlayers
                             :
                             `${boardGame.minPlayers}-${boardGame.maxPlayers}`
                         }
-                        &nbsp;játékos</span>
+                    </span>
+                    &nbsp;&nbsp;&nbsp;
                     <span>
                         <i className="fas fa-clock" />
+                        &nbsp;
                         {boardGame.minTime === boardGame.maxTime ?
                             boardGame.minTime
                             :
                             `${boardGame.minTime}-${boardGame.maxTime}`
                         }
-                        &nbsp;perc</span>
+                    </span>
                 </div>
             </div>
         </div>

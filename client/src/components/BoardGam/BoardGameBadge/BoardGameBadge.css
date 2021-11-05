@@ -30,7 +30,10 @@
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 0.5rem 1.5rem 1rem 1.5rem;
+    display: flex;
+    flex-flow:  column nowrap;
+    align-items: center;
+    padding: 0.5rem 0.25rem;
     background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .9));
     color: white;
     z-index: 3;
@@ -39,14 +42,14 @@
 .board-game-badge .board-game-name {
     margin: 0;
     padding: 0;
-    font-size: 1.25rem;
-    font-weight: bold;
+    font-size: 1.15rem;
+    text-align: center;
+    font-weight: 400;
 }
 
 .board-game-badge .board-game-badge-details {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -57,7 +60,20 @@
 }
 
 .board-game-badge .board-game-badge-details span i {
-    display: block;
-    margin-right: 0.4rem;
     font-size: 0.7rem;
+}
+
+@media screen and (max-width: 768px) {
+    .board-game-badge-content {
+        padding: 0.5rem;
+    }
+    .board-game-badge .board-game-name {
+        font-size: 1rem;
+    }
+    .board-game-badge .board-game-badge-details span {
+        font-size: 0.7rem;
+    }
+    .board-game-badge .board-game-badge-details span i {
+        font-size: 0.6rem;
+    }
 }

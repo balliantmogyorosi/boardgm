@@ -1,14 +1,16 @@
 import React from 'react'
 
+import Container from '../../Layout/Container/Container'
+
 import './NavigationFooter.css'
 
 
 const NavigationFooter = () => {
     return (
         <footer className="navigation-footer">
-            <div className="navigation-footer-content">
-                Navigation Footer
-            </div>
+            <Container>
+
+            </Container>
         </footer>
     )
 }

@@ -1,12 +1,16 @@
 import React from 'react'
 
+import Container from '../../Layout/Container/Container'
+
 import './NavigationHeader.css'
 
 
 const NavigationHeader = () => {
     return (
         <header className="navigation-header">
-            <div className="navigation-header-content">Navigation Header</div>
+            <Container>
+
+            </Container>
         </header>
     )
 }
