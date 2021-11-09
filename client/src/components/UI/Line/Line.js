@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const Line = ({ width = 60, height = 6, color = '#EDC7B7', spacingVertical = '1rem', style }) => {
+const Line = ({ width = 60, height = 6, color = '#024959', spacingVertical = '1rem', style }) => {
     return (
         <div style={{
             paddingTop: spacingVertical,

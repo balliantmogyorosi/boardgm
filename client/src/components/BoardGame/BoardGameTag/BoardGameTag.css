@@ -1,0 +1,28 @@
+.board-game-tag {
+    position: relative;
+    width: fit-content;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.board-game-tag::after {
+    content: "";
+    display: block;
+    background-color: rgba(0, 0, 0, .1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.board-game-tag:hover::after {
+    opacity: 1;
+}
+
+.board-game-tag .board-game-tag-text {
+    font-size: 0.8rem;
+    font-weight: 700;
+}

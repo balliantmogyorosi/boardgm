@@ -2,12 +2,12 @@ import React from 'react'
 
 import Container from '../../Layout/Container/Container'
 
-import './NavigationFooter.css'
+import './AppFooter.css'
 
 
-const NavigationFooter = () => {
+const AppFooter = () => {
     return (
-        <footer className="navigation-footer">
+        <footer className="app-footer">
             <Container>
 
             </Container>
@@ -15,4 +15,4 @@ const NavigationFooter = () => {
     )
 }
 
-export default NavigationFooter
+export default AppFooter

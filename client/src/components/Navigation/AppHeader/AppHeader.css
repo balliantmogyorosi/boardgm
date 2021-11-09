@@ -1,0 +1,15 @@
+.app-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 4rem;
+    background-color: white;
+    z-index: 1000;
+}
+
+.app-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

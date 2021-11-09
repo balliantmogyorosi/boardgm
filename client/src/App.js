@@ -1,11 +1,18 @@
 import React from 'react'
+import { Route, Routes } from 'react-router-dom'
 
-import Home from './containers/Home'
+import HomePage from './containers/HomePage'
+import BoardGameListPage from './containers/BoardGameListPage'
+import BoardGameDetailPage from './containers/BoardGameDetailPage'
 
 
 const App = () => {
     return (
-        <Home />
+        <Routes>
+            <Route path='/' element={<HomePage />} />
+            <Route path='/tarsasjatekok' element={<BoardGameListPage />} />
+            <Route path='/tarsasjatekok/:slug' element={<BoardGameDetailPage />} />
+        </Routes>
     )
 }
 

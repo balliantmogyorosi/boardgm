@@ -31,6 +31,9 @@ const BoardGameSchema = new Schema({
         type: Number,
         required: true,
     },
+    recommendedPlayers: {
+        type: Number,
+    },
     minTime: {
         type: Number,
         required: true,
@@ -50,12 +53,13 @@ const BoardGameSchema = new Schema({
 }, { versionKey: false, timestamps: false, })
 
 BoardGameSchema.methods = {
-    setValues: function ({ name, description, thumbURL, minPlayers, maxPlayers, minTime, maxTime, genres, stock, }) {
+    setValues: function ({ name, description, thumbURL, minPlayers, maxPlayers, recommendedPlayers, minTime, maxTime, genres, stock, }) {
         this.name = name
         this.description = description
         this.thumbURL = thumbURL
         this.minPlayers = minPlayers
         this.maxPlayers = maxPlayers
+        this.recommendedPlayers = recommendedPlayers
         this.minTime = minTime
         this.maxTime = maxTime
         this.genres = genres

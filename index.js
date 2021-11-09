@@ -7,6 +7,7 @@ const path = require('path')
 
 // Load routes
 const boardGameRoutes = require('./routes/api/boardGameRoutes')
+const boardGameInteractionRoutes = require('./routes/api/boardGameInteractionRoutes')
 
 
 const app = express()
@@ -15,6 +16,12 @@ app.use(bodyParser.json())
 
 // Use routes
 app.use('/api/board-games', boardGameRoutes)
+app.use('/api/board-game-interactions', boardGameInteractionRoutes)
+
+
+// Configure statis 'assets' folder
+app.use('/assets/rules', express.static(path.join(__dirname, 'assets', 'rules')))
+app.use('/assets/images', express.static(path.join(__dirname, 'assets', 'images')))
 
 // Server static assets if in production
 if (process.env.NODE_ENV === 'production') {

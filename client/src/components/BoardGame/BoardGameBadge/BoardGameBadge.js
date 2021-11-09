@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useCallback } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { Box } from '../../UI'
 
 import './BoardGameBadge.css'
 
 
-const BoardGameBadge = ({ boardGame, className, onClick, style }) => {
+const BoardGameBadge = ({ boardGame, className, style }) => {
+    const navigate = useNavigate()
+
+    const handleOnClick = useCallback(() => {
+        navigate(`/tarsasjatekok/${boardGame.slug}`)
+    }, [navigate, boardGame])
+
     return (
-        <div className={["board-game-badge", className].join(' ')} style={{ ...style, }} onClick={onClick}>
+        <Box className={["board-game-badge", className].join(' ')} style={{ ...style, }} onClick={handleOnClick}>
             <div
                 className="board-game-badge-background"
                 style={{ backgroundImage: `url(${boardGame.thumbURL})`, }}
@@ -34,7 +42,7 @@ const BoardGameBadge = ({ boardGame, className, onClick, style }) => {
                     </span>
                 </div>
             </div>
-        </div>
+        </Box>
     )
 }
 

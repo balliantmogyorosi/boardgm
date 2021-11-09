@@ -1,0 +1,22 @@
+.board-game-detail {
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "images info"
+        "descriptions descriptions";
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.board-game-detail .board-game-detail-images {
+    grid-area: images;
+}
+
+.board-game-detail .board-game-detail-info {
+    grid-area: info;
+}
+
+.board-game-detail .board-game-detail-descriptions {
+    grid-area: descriptions;
+}
