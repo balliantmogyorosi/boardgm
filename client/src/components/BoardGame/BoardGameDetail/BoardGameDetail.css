@@ -9,6 +9,13 @@
     row-gap: 1rem;
 }
 
+@media (max-width: 768px) {
+    .board-game-detail {
+        grid-template-columns: 1fr;
+        grid-template-areas: "info" "images" "descriptions";
+    }
+}
+
 .board-game-detail .board-game-detail-images {
     grid-area: images;
 }
